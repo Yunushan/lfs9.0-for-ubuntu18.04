@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo ""
-echo "----------- 5.10.GCC-9.2.0-Pass-2.sh-----------"
+echo "----------- 5.10.GCC-9.2.0-Pass-2.sh -----------"
 echo ""
 
 cd $LFS/sources
@@ -55,7 +55,7 @@ RANLIB=$LFS_TGT-ranlib                             \
     --disable-bootstrap                            \
     --disable-libgomp
 
-make -j4
+make
 make install
 ln -sv gcc /tools/bin/cc
 echo 'int main(){}' > dummy.c

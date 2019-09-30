@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo ""
-echo "----------- 5.6.Linux-5.2.8-API-Headers.sh-----------"
+echo "----------- 5.6.Linux-5.2.8-API-Headers.sh -----------"
 echo ""
 
 cd $LFS/sources

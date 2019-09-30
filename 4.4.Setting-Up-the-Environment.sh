@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo ""
-echo "----------- Starting 4.4.Setting-Up-the-Environment.sh-----------"
+echo "----------- Starting 4.4.Setting-Up-the-Environment.sh -----------"
 echo ""
 
 cat > ~/.bash_profile << "EOF"

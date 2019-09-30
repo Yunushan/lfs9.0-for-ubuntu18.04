@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo ""
-echo "----------- 5.5.GCC-9.2.0-Pass-1.sh-----------"
+echo "----------- 5.5.GCC-9.2.0-Pass-1.sh -----------"
 echo ""
 
 cd $LFS/sources
@@ -60,7 +60,7 @@ cd       build
     --disable-libstdcxx                            \
     --enable-languages=c,c++
 
-make -j4
+make
 make install
 
 cd $LFS/sources

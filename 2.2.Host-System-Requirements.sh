@@ -1,6 +1,6 @@
 #!/bin/bash
 echo ""
-echo "----------- Starting 2.2.Host-System-Requirements.sh-----------"
+echo "----------- Starting 2.2.Host-System-Requirements.sh -----------"
 echo "" 
 
 printf "\n\nUpdating File Database Please wait Until Finished"

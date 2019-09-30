@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo ""
-echo "----------- Starting 3.1.Introduction.sh-----------"
+echo "----------- Starting 3.1.Introduction.sh -----------"
 echo ""
 
 sudo mkdir -p -v $LFS/sources

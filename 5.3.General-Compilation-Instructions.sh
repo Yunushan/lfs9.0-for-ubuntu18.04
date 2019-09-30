@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo ""
-echo "----------- Starting 5.3.General-Compilation-Instructions.sh-----------"
+echo "----------- Starting 5.3.General-Compilation-Instructions.sh -----------"
 echo ""
 
 

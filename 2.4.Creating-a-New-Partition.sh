@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo ""
-echo "----------- Starting 2.4.Creating-a-New-Partition.sh-----------"
+echo "----------- Starting 2.4.Creating-a-New-Partition.sh -----------"
 echo ""
 
 

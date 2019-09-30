@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo ""
-echo "----------- Starting 2.7.Mounting-the-New-Partition.sh-----------"
+echo "----------- Starting 2.7.Mounting-the-New-Partition.sh -----------"
 echo ""
 
 sudo mount -v -t ext4 /dev/sda5 $LFS

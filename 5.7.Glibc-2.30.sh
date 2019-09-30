@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo ""
-echo "----------- 5.7.Glibc-2.30.sh-----------"
+echo "----------- 5.7.Glibc-2.30.sh -----------"
 echo ""
 
 cd $LFS/sources

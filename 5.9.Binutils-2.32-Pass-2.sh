@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo ""
-echo "----------- 5.9.Binutils-2.32-Pass-2.sh-----------"
+echo "----------- 5.9.Binutils-2.32-Pass-2.sh -----------"
 echo ""
 
 cd $LFS/sources
@@ -20,7 +20,7 @@ RANLIB=$LFS_TGT-ranlib         \
     --with-lib-path=/tools/lib \
     --with-sysroot
 
-make -j4
+make
 make install
 make -C ld clean
 make -C ld LIB_PATH=/usr/lib:/lib

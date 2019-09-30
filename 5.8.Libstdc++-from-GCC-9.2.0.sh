@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo ""
-echo "----------- 5.8.Libstdc++-from-GCC-9.2.0.sh-----------"
+echo "----------- 5.8.Libstdc++-from-GCC-9.2.0.sh -----------"
 echo ""
 
 cd $LFS/sources
@@ -19,7 +19,7 @@ cd       build
     --disable-libstdcxx-pch         \
     --with-gxx-include-dir=/tools/$LFS_TGT/include/c++/9.2.0
 
-make -j4
+make
 make install
 
 cd $LFS/sources
