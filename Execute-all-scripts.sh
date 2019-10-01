@@ -4,7 +4,10 @@ echo ""
 echo "----------- Starting Execute-all-scripts.sh-----------"
 echo ""
 
-sudo chmod 777 *
+printf "\n\nUpdating File Database Please wait Until Finished"
+sudo updatedb
+lfs90=`sudo locate LFS9.0-systemd-for-ubuntu18.04 | head -n 1`
+sudo chmod +x $lfs90
 
 sudo ./2.2.Host-System-Requirements.sh
 sudo ./2.4.Creating-a-New-Partition.sh
