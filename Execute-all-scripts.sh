@@ -12,8 +12,11 @@ sudo chmod +x $lfs90
 sudo ./2.2.Host-System-Requirements.sh
 sudo ./2.4.Creating-a-New-Partition.sh
 sudo ./2.5.Creating-a-File-System-on-the-Partition.sh
-sudo ./2.6.Setting-The-$LFS-Variable.sh
+sudo ./2.6.Setting-The-LFS-Variable.sh
 sudo ./2.7.Mounting-the-New-Partition.sh
 sudo ./3.1.Introduction.sh
-sudo ./4.2.Creating-the-$LFS-tools-Directory.sh
+sudo ./4.2.Creating-the-LFS-tools-Directory.sh
 sudo ./4.3.Adding-the-LFS-User.sh
+sudo ./5.37.Changing-Ownership.sh
+sudo ./6.2.Preparing-Virtual-Kernel-File-Systems.sh
+sudo ./6.4.Entering-the-Chroot-Environment.sh

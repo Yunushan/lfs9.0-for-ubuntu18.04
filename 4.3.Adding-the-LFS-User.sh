@@ -4,11 +4,13 @@ echo ""
 echo "----------- Starting 4.3.Adding-the-LFS-User.sh -----------"
 echo ""
 
+export LFS=/mnt/lfs
+
 printf "\n\nUpdating File Database Please wait Until Finished"
 sudo updatedb
 location44=`sudo locate 4.4.Setting-Up-the-Environment.sh | head -n 1`
 location53=`sudo locate 5.3.General-Compilation-Instructions.sh | head -n 1`
-location54=`sudo locate 5.4 Binutils-2.32-Pass-1.sh | head -n 1`
+location54=`sudo locate 5.4.Binutils-2.32-Pass-1.sh | head -n 1`
 location55=`sudo locate 5.5.GCC-9.2.0-Pass-1.sh | head -n 1`
 location56=`sudo locate 5.6.Linux-5.2.8-API-Headers.sh | head -n 1`
 location57=`sudo locate 5.7.Glibc-2.30.sh | head -n 1`
@@ -49,7 +51,7 @@ printf "\n\nLFS Password  "
 sudo passwd lfs
 sudo chown -v lfs $LFS/sources
 sudo chown -v lfs $LFS/tools
-su - lfs -c "bash $location44 && bash $location53 && bash $location54 && bash $location55 && bash $location56 && bash $location57 && bash $location58
+su -m lfs -c "bash $location44 && bash $location53 && bash $location54 && bash $location55 && bash $location56 && bash $location57 && bash $location58
  && bash $location59 && bash $location510 && bash $location511 && bash $location512 && bash $location513 && bash $location514 && bash $location515
  && bash $location516 && bash $location517 && bash $location518 && bash $location519 && bash $location520 && bash $location521 && bash $location522 
  && bash $location523 && bash $location524 && bash $location525 && bash $location526 && bash $location527 && bash $location528 && bash $location529
