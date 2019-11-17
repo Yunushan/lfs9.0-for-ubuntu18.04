@@ -14,7 +14,7 @@ cd util-linux-2.34
             --without-systemdsystemunitdir \
             --without-ncurses              \
             PKG_CONFIG=""
-make
+make -j8
 make install
 
 

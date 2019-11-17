@@ -20,7 +20,7 @@ RANLIB=$LFS_TGT-ranlib         \
     --with-lib-path=/tools/lib \
     --with-sysroot
 
-make
+make -j8
 make install
 make -C ld clean
 make -C ld LIB_PATH=/usr/lib:/lib

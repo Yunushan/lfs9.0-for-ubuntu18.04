@@ -9,7 +9,7 @@ tar xvf gettext-0.20.1.tar.xz
 cd gettext-0.20.1
 
 ./configure --disable-shared
-make
+make -j8
 cp -v gettext-tools/src/{msgfmt,msgmerge,xgettext} /tools/bin
 
 cd $LFS/sources

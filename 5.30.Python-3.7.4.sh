@@ -10,7 +10,7 @@ cd Python-3.7.4
 
 sed -i '/def add_multiarch_paths/a \        return' setup.py
 ./configure --prefix=/tools --without-ensurepip
-make
+make -j8
 make install
 
 cd $LFS/sources

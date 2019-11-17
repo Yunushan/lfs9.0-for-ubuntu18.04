@@ -9,7 +9,7 @@ tar xvf bison-3.4.1.tar.xz
 cd bison-3.4.1
 
 ./configure --prefix=/tools
-make
+make -j8
 make check
 make install
 

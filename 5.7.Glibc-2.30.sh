@@ -17,7 +17,7 @@ cd       build
       --enable-kernel=3.2                \
       --with-headers=/tools/include
 
-make
+make -j8
 make install
 
 echo 'int main(){}' > dummy.c

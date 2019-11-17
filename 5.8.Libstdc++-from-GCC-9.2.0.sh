@@ -19,7 +19,7 @@ cd       build
     --disable-libstdcxx-pch         \
     --with-gxx-include-dir=/tools/$LFS_TGT/include/c++/9.2.0
 
-make
+make -j8
 make install
 
 cd $LFS/sources

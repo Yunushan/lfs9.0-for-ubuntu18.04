@@ -9,7 +9,7 @@ tar xvf sed-4.7.tar.xz
 cd sed-4.7
 
 ./configure --prefix=/tools
-make
+make -j8
 make check
 make install
 

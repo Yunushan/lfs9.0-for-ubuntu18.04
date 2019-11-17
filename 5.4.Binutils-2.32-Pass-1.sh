@@ -16,7 +16,7 @@ cd       build
              --target=$LFS_TGT          \
              --disable-nls              \
              --disable-werror
-make
+make -j8
 #If building on x86_64, create a symlink to ensure the sanity of the toolchain:
 case $(uname -m) in
   x86_64) mkdir -v /tools/lib && ln -sv lib /tools/lib64 ;;

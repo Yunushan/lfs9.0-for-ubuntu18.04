@@ -9,7 +9,7 @@ tar xvf diffutils-3.7.tar.xz
 cd diffutils-3.7
 
 ./configure --prefix=/tools
-make
+make -j8
 make check
 make install
 

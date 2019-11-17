@@ -9,7 +9,7 @@ tar xvf texinfo-6.6.tar.xz
 cd texinfo-6.6
 
 ./configure --prefix=/tools
-make
+make -j8
 make check
 make install
 

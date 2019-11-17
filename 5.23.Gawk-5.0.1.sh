@@ -9,7 +9,7 @@ tar xvf gawk-5.0.1.tar.xz
 cd gawk-5.0.1
 
 ./configure --prefix=/tools
-make
+make -j8
 make check
 make install
 

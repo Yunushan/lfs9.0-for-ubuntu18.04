@@ -4,4 +4,6 @@ echo ""
 echo "----------- 5.37. Changing Ownership -----------"
 echo ""
 
-chown -R root:root $LFS/tools
+export LFS=/mnt/lfs
+
+sudo chown -R root:root $LFS/tools

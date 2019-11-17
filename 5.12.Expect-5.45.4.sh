@@ -13,7 +13,7 @@ sed 's:/usr/local/bin:/bin:' configure.orig > configure
 ./configure --prefix=/tools       \
             --with-tcl=/tools/lib \
             --with-tclinclude=/tools/include
-make
+make -j8
 make test
 make SCRIPTS="" install
 

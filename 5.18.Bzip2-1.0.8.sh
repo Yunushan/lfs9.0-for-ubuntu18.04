@@ -8,7 +8,7 @@ cd $LFS/sources
 tar xvf bzip2-1.0.8.tar.gz
 cd bzip2-1.0.8
 
-make
+make -j8
 make PREFIX=/tools install
 
 cd $LFS/sources

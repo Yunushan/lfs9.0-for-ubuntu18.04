@@ -9,7 +9,7 @@ tar xvf file-5.37.tar.gz
 cd file-5.37
 
 ./configure --prefix=/tools
-make
+make -j8
 make check
 make install
 

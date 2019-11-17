@@ -55,7 +55,7 @@ RANLIB=$LFS_TGT-ranlib                             \
     --disable-bootstrap                            \
     --disable-libgomp
 
-make
+make -j8
 make install
 ln -sv gcc /tools/bin/cc
 echo 'int main(){}' > dummy.c

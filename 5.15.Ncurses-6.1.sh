@@ -15,7 +15,7 @@ sed -i s/mawk// configure
             --without-ada   \
             --enable-widec  \
             --enable-overwrite
-make
+make -j8
 make install
 ln -s libncursesw.so /tools/lib/libncurses.so
 

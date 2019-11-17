@@ -60,7 +60,7 @@ cd       build
     --disable-libstdcxx                            \
     --enable-languages=c,c++
 
-make
+make -j8
 make install
 
 cd $LFS/sources
