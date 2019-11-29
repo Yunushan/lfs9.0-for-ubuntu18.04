@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo ""
-echo "----------- Starting Install-3.sh-----------"
+echo "----------- Starting Install-5.sh-----------"
 echo ""
 
 printf "\n\nUpdating File Database Please wait Until Finished"
@@ -10,6 +10,4 @@ lfs90=`sudo locate lfs9.0-for-ubuntu18.04 | head -n 1`
 sudo chmod +x $lfs90
 cd $lfs90
 
-sudo ./5.37.Changing-Ownership.sh
-sudo ./6.2.Preparing-Virtual-Kernel-File-Systems.sh
-sudo ./6.4.Entering-the-Chroot-Environment.sh
+sudo ./6.79.Cleaning-Up-Part-2.sh
