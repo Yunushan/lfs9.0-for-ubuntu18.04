@@ -6,8 +6,27 @@ To install linux from scratch 9.0 with systemd as easy as possible for linux use
 
 ## Known Bugs
 
-In `4.4.Setting-Up-the-Environment.sh`.Bash profile changes and i couldn't execute old .sh scripts,that is why i split installation scripts like `Install-1.sh` `Install-2.sh` `Install-3.sh`.Still trying to fix this issue (Your supports kindly accepted ^^).Beside from that my project is still `Fully` in testing phase,it is not completed yet.
+In script `4.4.Setting-Up-the-Environment.sh`.Bash profile changes and i couldn't run .sh scripts after that automatically i'll explain how can you run them in my script order by order , Still trying to fix this issue (Your supports kindly accepted ^^).Beside from that my project is still `Fully` in testing phase,it is not completed yet.
 
 ## Installation
+(My personal suggestion is run bash scripts in root user)
 
-You can execute scripts step by step `sudo bash 2.2.Host-System-Requirements.sh` `sudo bash 2.4.Creating-a-New-Partition.sh` or you can execute all of them in once `sudo bash Install-1.sh` `sudo bash Install-2.sh` `sudo bash Install-3.sh` (My personal suggestion is execute bash scripts in root)
+First command will run until `4.4.Setting-Up-the-Environment.sh`.(4.4.Setting-Up-the-Environment.sh `won't` run with this command)
+Second command will run only `4.4.Setting-Up-the-Environment.sh`
+Third command will run until `5.37.Changing-Ownership.sh`.(5.37.Changing-Ownership.sh `won't` run with this command)
+Fourth command will run only exit from lfs (I'm not %100 sure how many exit commands to reach your default or root user, one exit will be run in code and de second by your hand, i will check last state of this situation for certain knowledge)
+Fifth command will run until `6.4.Entering-the-Chroot-Environment.sh` (6.4.Entering-the-Chroot-Environment.sh `won't` run with this command)
+Sixth command will run until `6.79.Cleaning-Up-Part-2.sh` (6.79.Cleaning-Up-Part-2.sh `won't` run with this command)
+(Make sure you quit `lfs` user ) Seventh command will run 
+Seventh command will run only `6.79.Cleaning-Up-Part-2.sh` for now
+
+
+Automatic Installation Order
+
+1-) sudo ./Install-1.sh
+2-) sudo ./4.4.Setting-Up-the-Environment.sh
+3-) sudo ./Install-2.sh
+4-) exit
+5-) sudo ./Install-3.sh
+6-) sudo ./Install-4.sh
+7-) sudo ./Install-5.sh
