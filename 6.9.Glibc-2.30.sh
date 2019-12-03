@@ -117,7 +117,7 @@ zic -d $ZONEINFO -p America/New_York
 unset ZONEINFO
 
 #tzselect
-ln -sfv /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
+ln -sfv /usr/share/zoneinfo/Europe/Istanbul /etc/localtime # Location Is changible
 
 cat > /etc/ld.so.conf << "EOF"
 # Begin /etc/ld.so.conf

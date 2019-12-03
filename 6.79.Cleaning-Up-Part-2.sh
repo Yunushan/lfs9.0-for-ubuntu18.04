@@ -10,11 +10,11 @@ sudo chroot "$LFS" /usr/bin/env -i          \
     PATH=/bin:/usr/bin:/sbin:/usr/sbin \
     /bin/bash --login
 
-sudo rm -f /usr/lib/lib{bfd,opcodes}.a
-sudo rm -f /usr/lib/libbz2.a
-sudo rm -f /usr/lib/lib{com_err,e2p,ext2fs,ss}.a
-sudo rm -f /usr/lib/libltdl.a
-sudo rm -f /usr/lib/libfl.a
-sudo rm -f /usr/lib/libz.a
+rm -f /usr/lib/lib{bfd,opcodes}.a
+rm -f /usr/lib/libbz2.a
+rm -f /usr/lib/lib{com_err,e2p,ext2fs,ss}.a
+rm -f /usr/lib/libltdl.a
+rm -f /usr/lib/libfl.a
+rm -f /usr/lib/libz.a
 
-sudo find /usr/lib /usr/libexec -name \*.la -delete
+find /usr/lib /usr/libexec -name \*.la -delete
