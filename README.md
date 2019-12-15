@@ -12,21 +12,33 @@ In script `4.4.Setting-Up-the-Environment.sh`.Bash profile changes and i couldn'
 (My personal suggestion is run bash scripts in root user)
 
 First command will run until `4.4.Setting-Up-the-Environment.sh`.(4.4.Setting-Up-the-Environment.sh `won't` run with this command)
+
 Second command will run only `4.4.Setting-Up-the-Environment.sh`
+
 Third command will run until `5.37.Changing-Ownership.sh`.(5.37.Changing-Ownership.sh `won't` run with this command)
+
 Fourth command will run only exit from lfs (I'm not %100 sure how many exit commands to reach your default or root user, one exit will be run in code and de second by your hand, i will check last state of this situation for certain knowledge)
+
 Fifth command will run until `6.4.Entering-the-Chroot-Environment.sh` (6.4.Entering-the-Chroot-Environment.sh `won't` run with this command)
+
 Sixth command will run until `6.79.Cleaning-Up-Part-2.sh` (6.79.Cleaning-Up-Part-2.sh `won't` run with this command)
+
 (Make sure you quit `lfs` user ) Seventh command will run 
 Seventh command will run only `6.79.Cleaning-Up-Part-2.sh` for now
 
 
 Automatic Installation Order
 
-1-) sudo ./Install-1.sh
-2-) sudo ./4.4.Setting-Up-the-Environment.sh
-3-) sudo ./Install-2.sh
-4-) exit
-5-) sudo ./Install-3.sh
-6-) sudo ./Install-4.sh
-7-) sudo ./Install-5.sh
+1-) sudo bash Install-1.sh
+
+2-) sudo bash 4.4.Setting-Up-the-Environment.sh
+
+3-) sudo bash Install-2.sh
+
+4-) exit (2 times until you reach root user or your current user)
+
+5-) sudo bash Install-3.sh
+
+6-) sudo bash Install-4.sh
+
+7-) sudo bash Install-5.sh
