@@ -8,6 +8,15 @@ To install linux from scratch 9.0 with systemd as easy as possible for linux use
 
 In script `4.4.Setting-Up-the-Environment.sh`.Bash profile changes and i couldn't run .sh scripts after that automatically i'll explain how can you run them in my script order by order , Still trying to fix this issue (Your supports kindly accepted ^^).Beside from that my project is still `Fully` in testing phase,it is not completed yet.
 
+## (Optional)
+If you want comment/uncomment make check,make test parts of files you can choose them by selecting single file,multiple or all of them with all option `59`
+
+After you enter `1-59` you will see `+` added on the right side of the file you've selected.That means it is chosen file(s)
+
+After you selected desired files you must enter `60 Done` for proceed comment/uncomment files.
+
+sudo bash Comment-out-specified-test-suites.sh
+
 ## Installation
 (My personal suggestion is run bash scripts in root user)
 

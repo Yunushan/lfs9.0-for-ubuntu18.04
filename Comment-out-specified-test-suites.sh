@@ -1068,12 +1068,14 @@ do
                 sed -e '/make check/ s/^#*/#/' -i 6.15.Bc-2.1.3.sh
             fi
             # 22) 6.16.Binutils-2.32.sh
-            if grep -q "#make test" 6.16.Binutils-2.32.sh || grep -q "#make check" 6.16.Binutils-2.32.sh;then
+            if grep -q "#make test" 6.16.Binutils-2.32.sh || grep -q "#make check" 6.16.Binutils-2.32.sh || grep -q "#make -k check" 6.16.Binutils-2.32.sh;then
                 sed -i '/make test/s/^#//g' 6.16.Binutils-2.32.sh
                 sed -i '/make check/s/^#//g' 6.16.Binutils-2.32.sh
+                sed -i '/make -k check/s/^#//g' 6.16.Binutils-2.32.sh
             else
                 sed -e '/make test/ s/^#*/#/' -i 6.16.Binutils-2.32.sh
                 sed -e '/make check/ s/^#*/#/' -i 6.16.Binutils-2.32.sh
+                sed -e '/make -k check/ s/^#*/#/' -i 6.16.Binutils-2.32.sh
             fi
             # 23) 6.17.GMP-6.1.2.sh
             if grep -q "#make test" 6.17.GMP-6.1.2.sh || grep -q "#make check" 6.17.GMP-6.1.2.sh;then
