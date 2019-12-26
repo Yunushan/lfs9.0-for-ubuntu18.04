@@ -47,26 +47,28 @@ echo ""
 
 #Hardware clock will also be updated accordingly.
 
+############################################################
 #To change your current time zone, issue:
-timedatectl set-timezone UTC #Location is changible
+#timedatectl set-timezone UTC #Location is changible
 
 
-ZONES="$(timedatectl list-timezones)"
+#ZONES="$(timedatectl list-timezones)"
 
-for ZONE in $ZONES
-do
-    OFFSET="$(env TZ=${ZONE} date +%:z)"
-    echo "$ZONE $OFFSET"
-done
+#for ZONE in $ZONES
+#do
+#    OFFSET="$(env TZ=${ZONE} date +%:z)"
+#    echo "$ZONE $OFFSET"
+#done
 
-printf "\nBy default i define time zone as 'UTC'\nPlease write your location eg. 'Europe/Paris'  
-(You can scrool down/up in terminal via shift + page up/page down or Ctrl + Shift up/down arrow )\n\nYour location:"
-read timezone
+#printf "\nBy default i define time zone as 'UTC'\nPlease write your location eg. 'Europe/Paris'  
+#(You can scrool down/up in terminal via shift + page up/page down or Ctrl + Shift up/down arrow )\n\nYour location:"
+#read timezone
 
-timedatectl set-timezone $timezone
-printf "Selected timezone is $timezone\n"
-timedatectl
-sleep 2
+#timedatectl set-timezone $timezone
+#printf "Selected timezone is $timezone\n"
+#timedatectl
+#sleep 2
+############################################################
 
 ############################################################
 #You can get a list of available time zones by running:
