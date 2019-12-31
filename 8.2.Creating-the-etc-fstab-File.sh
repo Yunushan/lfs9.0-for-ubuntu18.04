@@ -13,11 +13,13 @@ cat > /etc/fstab << "EOF"
 # file system  mount-point  type     options             dump  fsck
 #                                                              order
 
-/dev/<xxx>     /            <fff>    defaults            1     1
-/dev/<yyy>     swap         swap     pri=1               0     0
+/dev/sda5    /              ext4     defaults             1     1
+/dev/sda6    swap           swap     pri=1                0     0
+/dev/sda4    /boot          ext2     noauto               1     2
 
 # End /etc/fstab
 EOF
+
 #Replace <xxx>, <yyy>, and <fff> with the values appropriate for the system, for example, sda2, sda5, and ext4. For details on the six fields in this file, see man 5 fstab.
 
 #Filesystems with MS-DOS or Windows origin (i.e. vfat, ntfs, smbfs, cifs, iso9660, udf) need a special option, utf8, in order for non-ASCII characters in file names to be interpreted properly. For non-UTF-8 locales, the value of iocharset should be set to be the same as the character set of the locale, adjusted in such a way that the kernel understands it. This works if the relevant character set definition (found under File systems -> Native Language Support when configuring the kernel) has been compiled into the kernel or built as a module. However, if the character set of the locale is UTF-8, the corresponding option iocharset=utf8 would make the file system case sensitive. To fix this, use the special option utf8 instead of iocharset=utf8, for UTF-8 locales. The “codepage” option is also needed for vfat and smbfs filesystems. It should be set to the codepage number used under MS-DOS in your country. For example, in order to mount USB flash drives, a ru_RU.KOI8-R user would need the following in the options portion of its mount line in /etc/fstab:
