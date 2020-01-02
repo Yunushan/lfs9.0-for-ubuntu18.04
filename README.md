@@ -18,7 +18,8 @@ After you selected desired files you must enter `60 Done` for proceed comment/un
 sudo bash Comment-out-specified-test-suites.sh
 
 ## (Optional 2 for uefi installation)
-If you want install UEFI installation you need to run `BLFS-files` scripts  after `7.10.Systemd-Usage-and-Configuration.sh` done.`Before you run 8.2.Creating-the-etc-fstab.sh file`
+If you want install `UEFI` installation you need to run `BLFS-files` scripts  after `7.10.Systemd-Usage-and-Configuration.sh` done.`Before you run 8.2.Creating-the-etc-fstab.sh file`
+You need to run `BLFS-files-installer-2.sh` in `BLFS-files` after `8.3.Linux-5.2.8.sh` section and before `8.4.Using-GRUB-to-Set-Up-the-Boot-Process.sh`
 
 ## Installation
 (My personal suggestion is run bash scripts in root user)

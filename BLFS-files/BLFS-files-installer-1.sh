@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo ""
-echo "----------- Starting BLFS-files-installer.sh-----------"
+echo "----------- Starting BLFS-files-installer-1.sh-----------"
 echo ""
 
 #Make sure you are inside BLFS-files

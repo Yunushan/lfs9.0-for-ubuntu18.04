@@ -15,7 +15,7 @@ cat > /etc/fstab << "EOF"
 
 /dev/sda5    /              ext4     defaults             1     1
 /dev/sda6    swap           swap     pri=1                0     0
-/dev/sda4    /boot          ext2     noauto               1     2
+/dev/sda4    /boot          vfat     noauto               1     2
 
 # End /etc/fstab
 EOF
