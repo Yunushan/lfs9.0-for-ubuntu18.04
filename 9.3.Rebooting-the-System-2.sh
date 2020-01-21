@@ -14,7 +14,4 @@ sudo umount -v $LFS/proc
 sudo umount -v $LFS/sys
 sudo umount -v $LFS/boot
 sudo umount -v $LFS
-
-sudo umount -v $LFS
-
 sudo shutdown -r now

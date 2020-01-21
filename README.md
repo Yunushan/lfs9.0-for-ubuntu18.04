@@ -22,7 +22,6 @@ If you want install `UEFI` installation you need to run `BLFS-files` scripts  af
 You need to run `BLFS-files-installer-2.sh` in `BLFS-files` after `8.3.Linux-5.2.8.sh` section and before `8.4.Using-GRUB-to-Set-Up-the-Boot-Process.sh`
 
 ## Installation
-(My personal suggestion is run bash scripts in root user)
 
 First command will run until `4.4.Setting-Up-the-Environment.sh`.(4.4.Setting-Up-the-Environment.sh `won't` run with this command)
 
@@ -42,16 +41,18 @@ Seventh command will run only `6.79.Cleaning-Up-Part-2.sh` for now
 
 Automatic Installation Order
 
-1-) sudo bash Install-1.sh
+1-) sudo bash Install-1.sh (Run with root user)
 
-2-) sudo bash 4.4.Setting-Up-the-Environment.sh
+2-) bash 4.4.Setting-Up-the-Environment.sh (Run with lfs user)
 
-3-) sudo bash Install-2.sh
+3-) bash Install-2.sh (Run with lfs user)
 
 4-) exit (2 times until you reach root user or your current user)
 
-5-) sudo bash Install-3.sh
+5-) sudo bash Install-3.sh (Run with root user)
 
-6-) sudo bash Install-4.sh
+6-) bash Install-4.sh (Run with lfs user)
 
-7-) sudo bash Install-5.sh
+7-) bash Install-5.sh (Run with lfs user)
+
+8-) sudo bash Install-6.sh (Run with root user)

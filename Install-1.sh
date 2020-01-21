@@ -4,6 +4,10 @@ echo ""
 echo "----------- Starting Install-1.sh-----------"
 echo ""
 
+echo ""
+echo "----------- !!!RUN THIS COMMANDS IN ROOT USER!!!-----------"
+echo ""
+
 printf "\n\nUpdating File Database Please wait Until Finished"
 sudo updatedb
 lfs90=`sudo locate lfs9.0-for-ubuntu18.04 | head -n 1`
